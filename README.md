@@ -73,7 +73,7 @@ All dependencies are locked via `package-lock.json` to ensure reproducible build
 PrivacyPuzzle is operated through a command-line interface built with **Commander.js**.
 
 ```bash
-privacypuzzle <command> [options]
+node index.js <command> [options]
 ```
 
 Each command is designed with explicit responsibilities, secure defaults, and clearly defined option boundaries.
@@ -103,7 +103,7 @@ The embedding strategy applies controlled bit diffusion to reduce susceptibility
 
 ### Practical Example
 ```bash
-privacypuzzle hide -m "Confidential meeting on December 27, 2025" -p "StrongPassphrase2025!" -s 20 -o secure-puzzle
+node index.js hide -m "Confidential meeting on December 27, 2025" -p "StrongPassphrase2025!" -s 20 -o secure-puzzle
 ```
 
 <table>
@@ -128,7 +128,7 @@ The `reveal` command executes the recovery pipeline of PrivacyPuzzle. It loads a
 
 ### Practical Example
 ```bash
-privacypuzzle reveal -i output/secure-puzzle.png -p "StrongPassphrase2025!"
+node index.js reveal -i output/secure-puzzle.png -p "StrongPassphrase2025!"
 ```
 
 **Output**: Progress logs followed by the decrypted message, e.g., "Confidential meeting on December 27, 2025".
@@ -141,7 +141,7 @@ The `educate` command outputs pedagogical content intended to improve user aware
 
 ### Practical Example
 ```bash
-privacypuzzle educate
+node index.js educate
 ```
 
 **Output**: A multi-section guide covering AES-256-GCM, steganography limitations, password hygiene, and modern privacy principles.
