@@ -1,6 +1,6 @@
 <img src="./public/privacypuzzle.png" alt="PrivacyPuzzle Nonogram" width="350" />
 
-# PrivacyPuzzle
+# PrivacyPuzzle [<code style="color : aqua">v1.2.0</code>](./CHANGELOG.md)
 ## Secure Message Encryption in Procedural Digital Puzzles
 
 **PrivacyPuzzle** is a Node.js–based application that combines advanced **cryptography** and **steganography** with **procedural puzzle generation** to securely embed confidential messages within digital **nonograms**.
